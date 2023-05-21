@@ -382,38 +382,6 @@ SECTION 2 TABLET
     color: var(--color-navy-blue);
   }
 }
-/* .second-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-.second-section-cntnr {
-  display: flex;
-}
-.oppotunities {
-  width: 264px;
-}
-.oppotunities:not(:last-child) {
-  margin-right: 24px;
-}
-
-}
-
-.title-descript {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--color-navy-blue);
-}
-.discription {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--color-slate);
-} */
-
-/* section 2 icons */
-
 /* ===================
 Section3
 ======================= */
