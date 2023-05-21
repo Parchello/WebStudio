@@ -210,8 +210,6 @@ Section Hero
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -265,30 +263,31 @@ Section Hero
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .hero-tittle {
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 36px;
     max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
+
     color: var(--color-white);
+  }
+  .hero-container {
+    padding: 112px 136px;
   }
 }
 @media only screen and (min-width: 1158px) {
   .hero-tittle {
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 48px;
     max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
+
     color: var(--color-white);
+  }
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
 }
 /* ===================
