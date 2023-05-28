@@ -1105,7 +1105,8 @@ modal window
   padding-bottom: 24px;
   top: 50%;
   left: 50%;
-  width: 408px;
+  min-width: 320px;
+  max-width: 408px;
   min-height: 576px;
   border-radius: 4px;
   background-color: var(--color-dairy);
