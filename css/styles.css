@@ -60,28 +60,25 @@ body {
   margin: 0;
   padding: 0;
 }
-/* .container {
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
-} */
+
 /* mobile version */
 
 .container {
   padding: 0 16px;
-  width: 428px;
+  min-width: 320px;
+  max-width: 428px;
   margin: 0 auto;
 }
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 /* display */
 @media only screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding: 0 15px;
   }
 }
@@ -184,7 +181,7 @@ HEADER
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  bottom: -1px;
+  bottom: 0;
 }
 .nav-link.active::after {
   background-color: var(--color-ocean);
@@ -288,7 +285,7 @@ Section Hero
 .hero {
   padding-top: 112px;
   padding-bottom: 112px;
-  min-width: 428px;
+  min-width: 320px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -404,9 +401,6 @@ Section Hero
 
     color: var(--color-white);
   }
-  .hero-container {
-    padding: 112px 136px;
-  }
 }
 @media only screen and (min-width: 1158px) {
   .hero-tittle {
@@ -498,7 +492,9 @@ SECTION 2 TABLET
   .title-descript {
     font-weight: 500;
     font-size: 20px;
+
     line-height: 1.2;
+    text-align: left;
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
   }
@@ -540,7 +536,8 @@ Section3
 OUR Team section
 ======================= */
 .team-section {
-  min-width: 428px;
+  min-width: 320px;
+
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -732,7 +729,7 @@ DISPLAY
 FOOTER
 ======================= */
 .footer {
-  min-width: 428px;
+  min-width: 320px;
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -817,7 +814,8 @@ FOOTER
   .form-foot-input {
     display: flex;
   }
-  .footer-box {
+  .footer-logo-position {
+    margin-right: 0;
   }
 }
 
@@ -825,6 +823,7 @@ FOOTER
   .footer-cntnr {
     display: flex;
     align-items: baseline;
+    gap: 0;
   }
   .footer-box {
     margin-right: 120px;
