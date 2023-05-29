@@ -231,9 +231,7 @@ HEADER
   .menu-item:not(:last-child) {
     margin-right: 40px;
   }
-  .menu {
-    margin-right: 121px;
-  }
+
   .nav-mail {
     padding: 0;
     display: block;
@@ -286,7 +284,7 @@ Section Hero
   padding-top: 112px;
   padding-bottom: 112px;
   min-width: 320px;
-  max-width: 100%;
+
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -817,6 +815,9 @@ FOOTER
   .footer-logo-position {
     margin-right: 0;
   }
+  .footer-field {
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -1315,6 +1316,12 @@ mobile menu
 
   color: var(--color-iris);
 }
+@media only screen and (max-width: 428px) {
+  .nav-tell-mobile {
+    font-size: calc(36 * (100vw - 75px) / (428 - 75));
+  }
+}
+
 .nav-mail-mobile {
   font-weight: 500;
   font-size: 20px;
@@ -1325,7 +1332,13 @@ mobile menu
   color: var(--color-slate);
 }
 .mobile-social {
-  gap: 56px;
+  justify-content: flex-start;
+  gap: calc((100% - 4 * 40px) / 3);
+}
+@media only screen and (min-width: 403px) {
+  .mobile-social {
+    gap: 56px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1379,7 +1392,7 @@ mobile menu
   padding: 0;
   margin: 0;
 
-  margin-top: 32px;
+  padding-top: 32px;
   margin-bottom: auto;
   list-style: none;
 }
